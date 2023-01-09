@@ -7,4 +7,16 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+#menu_utilisateur.hidden, #menu_produits.hidden, #menu_categorie.hidden{
+    display: none;
+}
+
+#menu_nav.hidden{
+    display: none;
+}
+#section_header.hidden{
+    border-right: 1px solid white;
+    border-bottom: 1px solid black;
+}
+
 // font-family: 'Montserrat', sans-serif;
