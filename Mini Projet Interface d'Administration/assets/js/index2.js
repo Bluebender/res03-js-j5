@@ -69,7 +69,51 @@ window.addEventListener("DOMContentLoaded", function(){
 // Affichage des utilisateurs
 
 for (user of users){
+    let tr = document.createElement("tr");
+
+    let td1 = document.createElement("td");
+    let td2 = document.createElement("td");
+    let td3 = document.createElement("td");
+    let td4 = document.createElement("td");
+    let td5 = document.createElement("td");
+
+    let id = document.createTextNode(user.id);
+    let name = document.createTextNode(user.name);
+    let age = document.createTextNode(user.age);
+    // let action = document.createTextNode()
+
+
+    let span1 = document.createElement("span");
+    span1.classList.add("bi-person-fill-up");
+    // console.log(span1);
     
+    let span2 = document.createElement("span");
+    span2.classList.add("bi-person-fill-down");
+    // console.log(span2);
+
+    if (user.isActive === true){
+        td4.appendChild(span1)
+        console.log(td4)
+    }
+    else if(user.isActive === false){
+        td4.appendChild(span2)
+    }
+
+    td1.appendChild(id);
+    td2.appendChild(name);
+    td3.appendChild(age);
+    // td4.appendChild(isActive);
+    // td5.appendChild(action);
+    
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    // tr.appendChild(td5);
+
+    tbody.appendChild(tr);
+
+
 }
 
 });

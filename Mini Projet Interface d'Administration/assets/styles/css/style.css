@@ -112,7 +112,7 @@ main > aside > nav > ul > li:hover {
 }
 main > section {
   grid-column: 2/3;
-  height: 70vh;
+  height: 85vh;
   padding: 2rem;
 }
 main > section > h2 {
@@ -145,7 +145,7 @@ main > section > section:nth-of-type(2) > table > tbody {
   line-height: 2rem;
   font-size: 1.2rem;
 }
-main > section > section:nth-of-type(2) > table > tbody > tr:nth-child(odd) {
+main > section > section:nth-of-type(2) > table > tbody > tr:not(:last-child) {
   border-bottom: 1px solid lightgrey;
 }
 

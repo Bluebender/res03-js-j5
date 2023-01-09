@@ -25,7 +25,7 @@ main{
     }
     > section{
         grid-column: 2 / 3;
-        height: 70vh;
+        height: 85vh;
         padding: 2rem;
         > h2{
             text-transform: uppercase;
@@ -58,7 +58,7 @@ main{
                     text-align: left;
                     line-height: 2rem;
                     font-size: 1.2rem;
-                    > tr:nth-child(odd){
+                    > tr:not(:last-child){
                         border-bottom: 1px solid lightgrey;
                     }
                 }
