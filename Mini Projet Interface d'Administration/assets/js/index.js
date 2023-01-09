@@ -1,3 +1,5 @@
+// Menu et sous menus
+
 let btn_utilisateur = document.getElementById("btn_utilisateur");
 let menu_utilisateur = document.getElementById("menu_utilisateur");
 let btn_produits = document.getElementById("btn_produits");
@@ -9,6 +11,7 @@ let btn_nav = document.getElementById("btn_nav");
 let menu_nav = document.getElementById("menu_nav");
 
 let section_header = document.getElementById("section_header");
+let section1 = document.getElementById("section1");
 
 function afficherLesSousMenus (bouton, menu){
     bouton.addEventListener("click", function(event){
@@ -26,5 +29,8 @@ afficherLesSousMenus(btn_categorie, menu_categorie);
 // Ouverture du menu principale
 afficherLesSousMenus(btn_nav, menu_nav);
 afficherLesSousMenus(btn_nav, section_header);
-
+afficherLesSousMenus(btn_nav, section1);
 });
+
+
+
