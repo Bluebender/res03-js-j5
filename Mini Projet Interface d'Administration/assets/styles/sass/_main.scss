@@ -61,6 +61,13 @@ main{
                     > tr:not(:last-child){
                         border-bottom: 1px solid lightgrey;
                     }
+                    > tr{
+                        > td{
+                            > a:first-of-type{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }

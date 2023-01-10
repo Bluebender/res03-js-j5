@@ -148,6 +148,9 @@ main > section > section:nth-of-type(2) > table > tbody {
 main > section > section:nth-of-type(2) > table > tbody > tr:not(:last-child) {
   border-bottom: 1px solid lightgrey;
 }
+main > section > section:nth-of-type(2) > table > tbody > tr > td > a:first-of-type {
+  margin-right: 5px;
+}
 
 .delete-user {
   font-size: 1.4rem;

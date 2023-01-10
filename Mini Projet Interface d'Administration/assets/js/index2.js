@@ -82,34 +82,48 @@ for (user of users){
     let age = document.createTextNode(user.age);
     // let action = document.createTextNode()
 
-
+    // Affichage des icones actif ou non
     let span1 = document.createElement("span");
     span1.classList.add("bi-person-fill-up");
-    // console.log(span1);
-    
+
     let span2 = document.createElement("span");
     span2.classList.add("bi-person-fill-down");
-    // console.log(span2);
 
     if (user.isActive === true){
-        td4.appendChild(span1)
-        console.log(td4)
+        td4.appendChild(span1);
     }
     else if(user.isActive === false){
-        td4.appendChild(span2)
+        td4.appendChild(span2);
     }
+
+    let icone1 = document.createElement("span");
+    icone1.classList.add("bi-eye");
+    let icone2 = document.createElement("span");
+    icone2.classList.add("bi-pen");
+    let icone3 = document.createElement("span");
+    icone3.classList.add("bi-trash3");
+    let a1 = document.createElement("a");
+    let a2 = document.createElement("a");
+    let button3 = document.createElement("button");
+    button3.classList.add("delete-user");
+    
+    a1.appendChild(icone1);
+    a2.appendChild(icone2);
+    button3.appendChild(icone3);
+    
+    td5.appendChild(a1);
+    td5.appendChild(a2);
+    td5.appendChild(button3);
 
     td1.appendChild(id);
     td2.appendChild(name);
     td3.appendChild(age);
-    // td4.appendChild(isActive);
-    // td5.appendChild(action);
-    
+
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
     tr.appendChild(td4);
-    // tr.appendChild(td5);
+    tr.appendChild(td5);
 
     tbody.appendChild(tr);
 
