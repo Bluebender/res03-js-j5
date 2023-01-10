@@ -21,5 +21,7 @@ html{
 #section1.hidden{
     grid-column: 1 / 3;
 }
-
+#section1.hidden{
+    display: none;    
+}
 // font-family: 'Montserrat', sans-serif;

@@ -52,14 +52,14 @@ table {
   border-spacing: 0;
 }
 
-header {
+body > header {
   display: grid;
   grid-template-columns: 1fr 3fr;
   justify-content: center;
   align-items: center;
   height: 15vh;
 }
-header > section {
+body > header > section {
   border-bottom: 1px solid white;
   height: 100%;
   border-right: 1px solid black;
@@ -67,23 +67,23 @@ header > section {
   grid-template-columns: 1fr 1fr 1fr 8fr 1fr;
   align-items: center;
 }
-header > section > span {
+body > header > section > span {
   grid-column: 2/3;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header > section > span:hover {
+body > header > section > span:hover {
   cursor: pointer;
 }
-header > section > figure {
+body > header > section > figure {
   grid-column: 4/5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header > nav {
+body > header > nav {
   height: 100%;
   border-bottom: 1px solid black;
 }
@@ -110,19 +110,19 @@ main > aside > nav > ul > li {
 main > aside > nav > ul > li:hover {
   cursor: pointer;
 }
-main > section {
+main > section:nth-of-type(1) {
   grid-column: 2/3;
   height: 85vh;
   padding: 2rem;
 }
-main > section > h2 {
+main > section:nth-of-type(1) > h2 {
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: bold;
   color: #0077B6;
   margin-bottom: 40px;
 }
-main > section > section:nth-of-type(1) > button {
+main > section:nth-of-type(1) > section:nth-of-type(1) > button {
   border: none;
   background-color: #023E8A;
   padding: 10px 20px;
@@ -131,25 +131,64 @@ main > section > section:nth-of-type(1) > button {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-main > section > section:nth-of-type(2) > table {
+main > section:nth-of-type(1) > section:nth-of-type(2) > table {
   width: 100%;
 }
-main > section > section:nth-of-type(2) > table > thead {
+main > section:nth-of-type(1) > section:nth-of-type(2) > table > thead {
   font-weight: 600;
   text-align: left;
   line-height: 4rem;
   font-size: 1.2rem;
 }
-main > section > section:nth-of-type(2) > table > tbody {
+main > section:nth-of-type(1) > section:nth-of-type(2) > table > tbody {
   text-align: left;
   line-height: 2rem;
   font-size: 1.2rem;
 }
-main > section > section:nth-of-type(2) > table > tbody > tr:not(:last-child) {
+main > section:nth-of-type(1) > section:nth-of-type(2) > table > tbody > tr:not(:last-child) {
   border-bottom: 1px solid lightgrey;
 }
-main > section > section:nth-of-type(2) > table > tbody > tr > td > a:first-of-type {
+main > section:nth-of-type(1) > section:nth-of-type(2) > table > tbody > tr > td > a:first-of-type {
   margin-right: 5px;
+}
+main > section:nth-of-type(2) {
+  background-color: lightgrey;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section:nth-of-type(2) > article {
+  border: 1px solid firebrick;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > section:nth-of-type(2) > article > header {
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+main > section:nth-of-type(2) > article > p {
+  padding: 20px;
+}
+main > section:nth-of-type(2) > article > footer > button {
+  font-weight: bold;
+  margin: 10px 10px;
+  border: 1px solid black;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+main > section:nth-of-type(2) > article > footer > button:first-of-type {
+  background-color: lightgrey;
+}
+main > section:nth-of-type(2) > article > footer > button:last-of-type {
+  background-color: firebrick;
 }
 
 .delete-user {
@@ -178,6 +217,10 @@ html {
 
 #section1.hidden {
   grid-column: 1/3;
+}
+
+#section1.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
