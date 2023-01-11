@@ -21,10 +21,12 @@ html{
 #section1.hidden{
     grid-column: 1 / 3;
 }
-#section1.hidden{
+#section1.masked{
     display: none;    
 }
 #section2.hidden{
+    grid-column: 1 / 3;
+}
+#section2.masked{
     display: none;
 }
-// font-family: 'Montserrat', sans-serif;

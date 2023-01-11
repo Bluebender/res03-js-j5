@@ -12,6 +12,7 @@ let menu_nav = document.getElementById("menu_nav");
 
 let section_header = document.getElementById("section_header");
 let section1 = document.getElementById("section1");
+let section2 = document.getElementById("section2");
 
 function afficherLesSousMenus (bouton, menu){
     bouton.addEventListener("click", function(event){
@@ -30,6 +31,7 @@ afficherLesSousMenus(btn_categorie, menu_categorie);
 afficherLesSousMenus(btn_nav, menu_nav);
 afficherLesSousMenus(btn_nav, section_header);
 afficherLesSousMenus(btn_nav, section1);
+afficherLesSousMenus(btn_nav, section2);
 });
 
 
